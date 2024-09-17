@@ -17,13 +17,13 @@ RUN set -e; \
 
 WORKDIR /tmp
 
-RUN set -e; \
-    mkdir .kube; \
-    rm -fr /tmp/install
+RUN rm -fr /tmp/install
 
 USER nobody
 
 ENV HOME="/tmp"
+
+RUN mkdir .kube
 
 ENTRYPOINT [ "sh" ]
 CMD [ "-c", "echo 'Sleeping...'; while true; do sleep 1; done" ]
