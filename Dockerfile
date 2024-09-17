@@ -21,5 +21,7 @@ RUN rm -fr /tmp/install
 
 USER nobody
 
+ENV HOME="/tmp"
+
 ENTRYPOINT [ "sh" ]
 CMD [ "-c", "echo 'Sleeping...'; while true; do sleep 1; done" ]
