@@ -3,8 +3,11 @@
 
 ### Extra installations
 
+- bash
+- openssl
 - git
 - curl
 - make
+- nodejs
 - kubectl
 - helm

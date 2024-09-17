@@ -4,7 +4,7 @@ FROM alpine:$TAG
 
 RUN set -e; \
     apk add --no-cache \
-      openssl git make curl nodejs npm; \
+      bash openssl git curl make nodejs npm; \
     npm i -g yarn
 
 COPY ./install /tmp/install
