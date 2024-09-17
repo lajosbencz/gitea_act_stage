@@ -8,6 +8,8 @@
 - git
 - curl
 - make
+- jq
+- yamllint
 - nodejs
 - kubectl
 - helm
