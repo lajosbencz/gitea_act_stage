@@ -17,7 +17,9 @@ RUN set -e; \
 
 WORKDIR /tmp
 
-RUN rm -fr /tmp/install
+RUN set -e; \
+    mkdir .kube; \
+    rm -fr /tmp/install
 
 USER nobody
 
